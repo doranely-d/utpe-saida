@@ -1,0 +1,24 @@
+﻿[Tue, 17 Mar 20 14:31:37 -0600][ERROR] usuario_i is required<br/>
+[Tue, 17 Mar 20 15:34:41 -0600][ERROR] C:\www\saida\app\config\services.php::110::Can't open log file at 'C:\www\saida/app/logs/sql_apps.log'
+[Tue, 17 Mar 20 15:34:47 -0600][ERROR] C:\www\saida\app\config\services.php::110::Can't open log file at 'C:\www\saida/app/logs/sql_apps.log'
+[Tue, 17 Mar 20 15:34:51 -0600][ERROR] C:\www\saida\app\config\services.php::110::Can't open log file at 'C:\www\saida/app/logs/sql_apps.log'
+[Thu, 19 Mar 20 12:23:50 -0600][ERROR] C:\www\saida\app\library\Phalcon\Db\Adapter\Pdo\Oracle.php::68::SQLSTATE[01002]: OCISessionBegin: ORA-00604: error occurred at recursive SQL level 1
+ORA-20001: El acceso a la BD DBAPP12D por esta maquina no esta disponible. 19-MAR-20 12.26.21.319282 PM -06:00*INT_SAIDAPF_FINANCIERO_LEGADOHTTPD.EXEWORKGROUP\DOROTEO
+ORA-06512: at line 83
+ (ext\pdo_oci\oci_driver.c:691)
+[Thu, 19 Mar 20 12:27:00 -0600][ERROR] C:\www\saida\app\library\Phalcon\Db\Adapter\Pdo\Oracle.php::68::SQLSTATE[01002]: OCISessionBegin: ORA-00604: error occurred at recursive SQL level 1
+ORA-20001: El acceso a la BD DBAPP12D por esta maquina no esta disponible. 19-MAR-20 12.29.31.445847 PM -06:00*INT_SAIDAPF_FINANCIERO_LEGADOHTTPD.EXEWORKGROUP\DOROTEO
+ORA-06512: at line 83
+ (ext\pdo_oci\oci_driver.c:691)
+[Thu, 19 Mar 20 13:12:25 -0600][ERROR] C:\www\saida\app\library\Phalcon\Db\Adapter\Pdo\Oracle.php::68::SQLSTATE[01002]: OCISessionBegin: ORA-00604: error occurred at recursive SQL level 1
+ORA-20001: El acceso a la BD DBAPP12D por esta maquina no esta disponible. 19-MAR-20 01.14.56.625035 PM -06:00*INT_SAIDAPF_FINANCIERO_LEGADOHTTPD.EXEWORKGROUP\DOROTEO
+ORA-06512: at line 83
+ (ext\pdo_oci\oci_driver.c:691)
+[Thu, 19 Mar 20 14:33:28 -0600][ERROR] C:\www\saida\app\library\Phalcon\Db\Adapter\Pdo\Oracle.php::68::SQLSTATE[01002]: OCISessionBegin: ORA-00604: error occurred at recursive SQL level 1
+ORA-20001: El acceso a la BD DBAPP12D por esta maquina no esta disponible. 19-MAR-20 02.35.59.954155 PM -06:00*INT_SAIDAPF_FINANCIERO_LEGADOHTTPD.EXEWORKGROUP\DOROTEO
+ORA-06512: at line 83
+ (ext\pdo_oci\oci_driver.c:691)
+[Wed, 25 Mar 20 15:51:39 -0600][ERROR] C:\www\saida\app\library\Phalcon\Db\Adapter\Pdo\Oracle.php::68::SQLSTATE[01002]: OCISessionBegin: ORA-00604: error occurred at recursive SQL level 1
+ORA-20001: El acceso a la BD DBAPP12D por esta maquina no esta disponible. 25-MAR-20 03.54.17.360058 PM -06:00*INT_SAIDAPF_FINANCIERO_LEGADOHTTPD.EXEWORKGROUP\DOROTEO
+ORA-06512: at line 83
+ (ext\pdo_oci\oci_driver.c:691)

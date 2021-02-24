@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js-graph.it 2.0</title>
+	<script type="text/javascript" src="../js/js-graph-it.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/js-graph-it.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sf-homepage.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  	<style>* { font-family: 'Raleway', sans-serif; }</style>
+</head>
+</head>
+<body>
+<table class="main_table" style="height: 100%;">
+		<tr>
+			<td width="120" style="vertical-align: top;" class="menu">
+				<ul id="menu">
+				</ul>
+			</td>
+			<td style="vertical-align: top; padding: 0px;">
+				<div id="mainCanvas" class="canvas" style="width: 100%; height: 500px;">
+			
+
+<h1 id="title_block" class="block draggable" style="left: 30px; top: 20px;">Getting started</h1>
+
+<h2 id="subtitle_block" class="block draggable" 
+style="left: 280px; top: 40px; padding-left: 10px; padding-right: 10px; width: 550px;">Beautifying the graph</h2>
+
+<div class="connector title_block subtitle_block">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div id="code" class="block code" style="left: 280px; top: 100px; padding: 10px; width: 550px; position: absolute;">
+	&lt;html&gt;<br>
+	&nbsp;&nbsp;&lt;head&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;script type="text/javascript" src="../js-graph-it.js"&gt;&lt;/script&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="../js-graph-it.css"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+<div class="highlighter block" id="canvas_style">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.canvas {<br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: tahoma;<br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</div>
+<div class="highlighter block" id="block_style">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.block {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid #7DAB76;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #BAFFB0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 3px;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</div>
+<div class="highlighter block" id="connector_style">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.connector {<br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlighter block" id="connector_color">background-color: #FF9900;</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</div>
+<div class="highlighter block" id="label_style">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.source-label, .middle-label, .destination-label {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlighter block" id="connector_color">padding: 5px;</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+	&nbsp;&nbsp;&lt;/head&gt;<br>
+	&nbsp;&nbsp;&lt;body onload="initPageObjects();"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="canvas" id="mainCanvas"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: 350px; height: 250px; border: 1px solid black;"&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="block draggable" id="h1_block"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="left: 10px; top: 10px;"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 block<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="block draggable" id="h2_block"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="left: 200px; top: 100px;"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 block<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="connector h1_block h2_block down_start down_end"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../img/arrow.gif" class="connector-start"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../img/arrow.gif" class="connector-end"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="source-label"&gt;start&lt;/label&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="middle-label"&gt;middle&lt;/label&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="destination-label"&gt;end&lt;/label&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+	&nbsp;&nbsp;&lt;/body&gt;<br>
+	&lt;/html&gt;
+</div>
+
+<p class="block draggable" id="styles_descr" style="width: 200px; top: 100px; left: 30px;">
+The last step is to use css styles to beautify the sample page. We will use a <code>style</code> section
+in the page header, but you can also use an external css file or set the style attribute on each element.
+</p>
+
+<p class="block draggable" id="canvas_style_descr" style="width: 200px; top: 220px; left: 30px;">
+First, we use the <code>canvas</code> class to define a font.
+</p>
+
+<div class="connector canvas_style_descr canvas_style">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<p class="block draggable" id="block_style_descr" style="width: 200px; top: 270px; left: 30px;">
+Then add a border, a background color and a little padding to the blocks.
+</p>
+
+<div class="connector block_style_descr block_style">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<p class="block draggable" id="connector_style_descr" style="width: 200px; top: 335px; left: 30px;">
+Changing the color of the connectors is a little less obvious since you have to use the background color, 
+not the color.
+</p>
+
+<div class="connector connector_style_descr connector_style">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<p class="block draggable" id="label_style_descr" style="width: 200px; top: 410px; left: 30px;">
+Finally, add some padding to the labels to move them slightly further from the connector.
+</p>
+
+<div class="connector label_style_descr label_style">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div class="block draggable" style="bottom: 10px; right: 130px; width: 80px;">
+	<a href="gettingstarted_7.html">&laquo; previous</a></div>
+
+<div class="block draggable" style="bottom: 10px; right: 30px; width: 80px; text-align: right;">
+	<a href="gettingstarted_end.html">next &raquo;</a></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+<script src="../js/menu.js"></script>
+<script src="../js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/*
+ * COPYRIGHT © 2019. PODER EJECUTIVO DEL ESTADO DE QUERÉTARO. PATENT PENDING. ALL RIGHTS RESERVED.
+ * SAIDA IS REGISTERED TRADEMARKS OF PODER EJECUTIVO DEL ESTADO DE QUERÉTARO.
+ *
+ * This software is confidential and proprietary information of PODER EJECUTIVO DEL ESTADO DE
+ * QUERÉTARO. You shall not disclose such Confidential Information and shall use it only in
+ * accordance with the company policy.
+ */
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+table td .span{
+    font-family: 'Calibri','sans-serif'; font-size: 10.4018px;
+}
+.texto{
+    font-size: 10.4018px;
+    font-family: sans-serif;
+    text-align: right;
+}
+strong .texto{
+    text-align: center;
+}

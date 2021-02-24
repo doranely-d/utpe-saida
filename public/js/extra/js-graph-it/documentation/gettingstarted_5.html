@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js-graph.it 2.0</title>
+	<script type="text/javascript" src="../js/js-graph-it.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/js-graph-it.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sf-homepage.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  	<style>* { font-family: 'Raleway', sans-serif; }</style>
+</head>
+</head>
+<body>
+<table class="main_table" style="height: 100%;">
+		<tr>
+			<td width="120" style="vertical-align: top;" class="menu">
+				<ul id="menu">
+				</ul>
+			</td>
+			<td style="vertical-align: top; padding: 0px;">
+				<div id="mainCanvas" class="canvas" style="width: 100%; height: 500px;">
+			
+
+<h1 id="title_block" class="block draggable" style="left: 30px; top: 20px;">Getting started</h1>
+
+<h2 id="subtitle_block" class="block draggable" style="left: 280px; top: 40px; padding-left: 10px; padding-right: 10px; width: 550px;">Drag and drop</h2>
+
+<div class="connector title_block subtitle_block">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div id="code" class="block code" style="left: 280px; top: 100px; padding: 10px; width: 550px; position: absolute;">
+	&lt;html&gt;<br>
+	&nbsp;&nbsp;&lt;head&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;script type="text/javascript" src="../js-graph-it.js"&gt;&lt;/script&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="../js-graph-it.css"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.block { position: absolute; }<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+	&nbsp;&nbsp;&lt;/head&gt;<br>
+	&nbsp;&nbsp;&lt;body onload="initPageObjects();"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="canvas" id="mainCanvas"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: 350px; height: 250px; border: 1px solid black;"&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="block <span class="highlighter block" id="draggable_class_1">draggable</span>" id="h1_block"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="left: 10px; top: 10px;"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 block<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="block <span class="highlighter block" id="draggable_class_2">draggable</span>" id="h2_block"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="left: 200px; top: 100px;"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 block<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="connector h1_block h2_block"&gt;&lt;/div&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+	&nbsp;&nbsp;&lt;/body&gt;<br>
+	&lt;/html&gt;
+</div>
+
+<p class="block draggable" id="draggable_class_descr" style="width: 200px; top: 309px; left: 30px;">
+Activating drag and drop on the blocks is very simple: just add the <code>draggable</code> class to them.
+</p>
+
+<div class="connector draggable_class_descr draggable_class_1">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div class="connector draggable_class_descr draggable_class_2">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div class="block draggable" id="draggable_class_descr" style="width: 200px; top: 500px; left: 30px;">
+<p>The <code>draggable</code> class can be applied to any element in an html page... A little bonus that
+comes with <dfn>js-graph-it</dfn>.</p>
+<p>Just a note: draggable elements must have absolute positioning and
+they cannot be dragged outside the bounds of their parent element (as it happens with the canvas).</p>
+</div>
+
+<div class="block draggable" style="bottom: 10px; right: 130px; width: 80px;">
+	<a href="gettingstarted_4.html">&laquo; previous</a></div>
+
+<div class="block draggable" style="bottom: 10px; right: 30px; width: 80px; text-align: right;">
+	<a href="gettingstarted_6.html">next &raquo;</a></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+<script src="../js/menu.js"></script>
+<script src="../js/init.js"></script>
+	</body>
+</html>

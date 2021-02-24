@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js-graph.it 2.0</title>
+	<script type="text/javascript" src="../js/js-graph-it.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/js-graph-it.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sf-homepage.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  	<style>* { font-family: 'Raleway', sans-serif; }</style>
+</head>
+<body>
+<table class="main_table" style="height: 100%;">
+		<tr>
+			<td width="120" style="vertical-align: top;" class="menu">
+				<ul id="menu">
+				</ul>
+			</td>
+			<td style="vertical-align: top; padding: 0px;">
+				<div id="mainCanvas" class="canvas" style="width: 100%; height: 500px;">
+			
+
+<h1 id="title_block" class="block draggable" style="left: 30px; top: 20px;">Getting started</h1>
+
+<h2 id="subtitle_block" class="block draggable" 
+style="left: 280px; top: 40px; padding-left: 10px; padding-right: 10px; width: 550px;">The connector</h2>
+
+<div class="connector title_block subtitle_block">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div id="code" class="block code" style="left: 280px; top: 100px; padding: 10px; width: 550px; position: absolute;">
+	&lt;html&gt;<br>
+	&nbsp;&nbsp;&lt;head&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;script type="text/javascript" src="../js-graph-it.js"&gt;&lt;/script&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="../js-graph-it.css"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.block { position: absolute; }<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+	&nbsp;&nbsp;&lt;/head&gt;<br>
+	&nbsp;&nbsp;&lt;body onload="initPageObjects();"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="canvas" id="mainCanvas"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="width: 350px; height: 250px; border: 1px solid black;"&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="block" id="h1_block"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="left: 10px; top: 10px;"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 block<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="block" id="h2_block"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="left: 200px; top: 100px;"&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 block<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;
+<div class="highlighter block" id="connector_tag">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<span class="highlighter block" id="connector_class">connector</span> <span class="highlighter block" id="connector_source">h1_block</span> <span class="highlighter block" id="connector_dest">h2_block</span>"&gt;&lt;/div&gt;
+</div>	
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+	&nbsp;&nbsp;&lt;/body&gt;<br>
+	&lt;/html&gt;
+</div>
+
+<div class="block draggable" id="connector_tag_descr" style="width: 200px; top: 100px; left: 10px;">
+A connector is declared using an html element of any kind. Just for the sake of clarity, I prefer using 
+<code>div</code> elements because <dfn>js-graph-it</dfn> translates the connector definition element in
+a "chain" of <code>div</code> elements.
+</div>
+
+<div class="connector connector_tag_descr connector_tag">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<p class="block draggable" id="connector_class_descr" style="width: 200px; top: 450px; left: 20px;">
+To declare that our <code>div</code> is a connector, we add the <code>connector</code> css class to it.
+</p>
+
+<div class="connector connector_class_descr connector_class up_end">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<p class="block draggable" id="connector_source_descr" style="width: 200px; top: 560px; left: 150px;">
+Add the id of the source block (to be conneced) as css class.
+</p>
+
+<div class="connector connector_source_descr connector_source up_end">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<p class="block draggable" id="connector_dest_descr" style="width: 160px; top: 560px; left: 400px;">
+Add the id of the destination block as a third css class.
+</p>
+
+<div class="connector connector_dest_descr connector_dest up_end right_start">
+	<img class="connector-end" src="../img/arrow.gif">
+</div>
+
+<div class="block draggable" style="bottom: 10px; right: 130px; width: 80px;">
+	<a href="gettingstarted_3.html">&laquo; previous</a></div>
+
+<div class="block draggable" style="bottom: 10px; right: 30px; width: 80px; text-align: right;">
+	<a href="gettingstarted_5.html">next &raquo;</a></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+<script src="../js/menu.js"></script>
+<script src="../js/init.js"></script>
+	</body>
+</html>
